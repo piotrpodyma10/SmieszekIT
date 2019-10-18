@@ -1,0 +1,30 @@
+.menuContainer {
+  height: 100vh;
+  width: 80px;
+  background-color: white;
+  float: left;
+
+  .menuElement {
+    padding: 20px 0px;
+    text-align: center;
+    width: inherit;
+    margin: auto;
+    display: block;
+    color: black;
+    
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  .homeIcon {
+    // background-image: url('./../../Assets/Icons/home.svg');
+    // background-repeat: no-repeat;
+  }
+  
+  .ratingIcon {
+    // background-image: url('./../../Assets//Icons/chart.svg');
+    // background-repeat: no-repeat;
+  }
+}

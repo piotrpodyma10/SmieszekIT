@@ -1,0 +1,10 @@
+@import './../../GlobalStyles/StyleConstants.scss';
+
+.resultMessageContainer {
+  margin: 30px;
+  background-color: $secondary;
+  padding: 30px;
+  height: auto;
+  color: $primary;
+  text-align: center;
+} 
