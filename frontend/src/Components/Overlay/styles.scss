@@ -3,16 +3,61 @@
     position: fixed;
     height: 100%;
     width: 100%;
+    z-index: 10;  
+    animation: showModal;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition: 2s;
+
+  }
+
+.closeAnimation {
+  animation: closeModal;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+  .modalContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-  
-  .modalContainer {
-    width: 300px;
+    z-index: 10;
     height: 300px;
-    border: 3px solid white;
-    transition: 1s;
-    color: black;
-    background-color: white;
+    width: 300px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: showModal;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition: 2s;
+
+    .modal {
+      width: 300px;
+      height: 300px;
+      border: 3px solid white;
+      transition: 1s;
+      color: black;
+      background-color: white;
+      z-index: 100;
+    }
   }
-}
+
+  @keyframes showModal {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes closeModal {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }

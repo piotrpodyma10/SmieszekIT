@@ -4,21 +4,19 @@ import Menu from '../Menu/Menu'
 import Home from '../../Views/Home'
 import Ratings from '../../Views/Ratings/Ratings'
 import { Route } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { displayModalAction } from '../../Store/Actions/modalActions/modalActions'
+import { closeModalAction } from '../../Store/Actions/modalActions/modalActions'
+
 
 class MainContent extends React.Component {
-  state = {
-    displayModal: true
-  }
-
-  openModal = () => {
-    this.setState({ displayModal: !this.state.displayModal })
-  }
 
   render() {
+    const { isModalOpened } = this.props.modal
     return (
       <React.Fragment>
         <Menu />
-        {this.state.displayModal && <Overlay openModal={this.openModal} />}
+        {isModalOpened && <Overlay />}
         <Route 
           exact 
           component ={Home}
@@ -34,4 +32,15 @@ class MainContent extends React.Component {
   }
 }
 
-export default MainContent
+const mapStateToProps = state => ({
+  ...state
+});
+
+const mapDispatchToProps = dispatch => ({
+  openModal: (payload) => dispatch(displayModalAction(payload)),
+  closeModal: () => dispatch(closeModalAction())
+
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(MainContent);
+
