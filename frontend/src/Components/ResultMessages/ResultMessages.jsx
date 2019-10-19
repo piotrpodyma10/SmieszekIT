@@ -9,6 +9,12 @@ const ResultMessages = () => {
     { 'text': 'Pan Kracy lubi piasek', 'count': 21 },
     { 'text': 'Pan Hilary kupił zjedzone okulary', 'count': 33 },
     { 'text': 'Ile w domku muszek  tyle przyjdzie duszek', 'count': 0 },
+    { 'text': 'Ile w domku muszek  tyle przyjdzie duszek', 'count': 0 },
+    { 'text': 'Ile w domku muszek  tyle przyjdzie duszek', 'count': 0 },
+    { 'text': 'Ile w domku muszek  tyle przyjdzie duszek', 'count': 0 },
+    { 'text': 'Ile w domku muszek  tyle przyjdzie duszek', 'count': 0 },
+    { 'text': 'Ile w domku muszek  tyle przyjdzie duszek', 'count': 0 },
+    { 'text': 'Ile w domku muszek  tyle przyjdzie duszek', 'count': 0 },
     { 'text': 'Jogurt zjedzony bedzie kupka', 'count': 821 }
   ]
   return (

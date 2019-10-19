@@ -1,10 +1,18 @@
 @import './../../GlobalStyles/StyleConstants.scss';
-
 .resultMessageContainer {
-  margin: 30px;
-  background-color: $secondary;
-  padding: 30px;
-  height: auto;
-  color: $primary;
-  text-align: center;
-} 
+    margin: 30px;
+    background-color: $secondary;
+    padding: 30px;
+    height: auto;
+    min-width: 400px;
+    color: $primary;
+    text-align: center;
+    transition: .5s;
+    box-sizing: border-box;
+    &:hover {
+        background-color: $orange;
+        transition: .5s;
+        color: $secondary;
+        cursor: pointer;
+    }
+}

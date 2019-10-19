@@ -1,30 +1,36 @@
 .menuContainer {
-  height: 100vh;
-  width: 80px;
-  background-color: white;
-  float: left;
-
-  .menuElement {
-    padding: 20px 0px;
-    text-align: center;
-    width: inherit;
-    margin: auto;
-    display: block;
-    color: black;
-    
-    &:hover {
-      background-color: black;
-      color: white;
+    height: 100vh;
+    width: 80px;
+    background-color: white;
+    float: left;
+    position: fixed;
+    .menuElement {
+        padding: 20px 0px;
+        text-align: center;
+        width: inherit;
+        margin: auto;
+        display: block;
+        color: black;
+        &:hover {
+            background-color: black;
+            color: white;
+        }
     }
-  }
+    .userIcon {
+        position: absolute;
+        bottom: 0;
+    }
+    .homeIcon {
+        // background-image: url('./../../Assets/Icons/home.svg');
+        // background-repeat: no-repeat;
+    }
+    .ratingIcon {
+        // background-image: url('./../../Assets//Icons/chart.svg');
+        // background-repeat: no-repeat;
+    }
+}
 
-  .homeIcon {
-    // background-image: url('./../../Assets/Icons/home.svg');
-    // background-repeat: no-repeat;
-  }
-  
-  .ratingIcon {
-    // background-image: url('./../../Assets//Icons/chart.svg');
-    // background-repeat: no-repeat;
-  }
+svg {
+    width: 30px;
+    height: 30px;
 }
